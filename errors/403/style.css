@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../../fonts/roboto-condensed-v19-latin_cyrillic-300.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../../fonts/roboto-condensed-v19-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../../fonts/roboto-condensed-v19-latin_cyrillic-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../../fonts/roboto-condensed-v19-latin_cyrillic-300.woff') format('woff'),
+        /* Modern Browsers */
+        url('../../fonts/roboto-condensed-v19-latin_cyrillic-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../../fonts/roboto-condensed-v19-latin_cyrillic-300.svg#RobotoCondensed') format('svg');
+    /* Legacy iOS */
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed';
+}
+
+body {
+    background: linear-gradient(45deg, #27166F, #49F458);
+    height: 100vh;
+}
+
+#container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: url(../../images/errorbg.jpg);
+    background-position: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .5);
+}
+
+#container .content {
+    max-width: 600px;
+    text-align: center;
+}
+
+#container .content h2 {
+    font-size: 16vw;
+    color: #fff;
+    line-height: 1em;
+    margin-top: 25px;
+    text-shadow: -3px -3px 0 #49F458, -3px -2px 0 #49F458, -3px -1px 0 #49F458, -3px 0px 0 #49F458, -3px 1px 0 #49F458, -3px 2px 0 #49F458, -3px 3px 0 #49F458, -2px -3px 0 #49F458, -2px -2px 0 #49F458, -2px -1px 0 #49F458, -2px 0px 0 #49F458, -2px 1px 0 #49F458, -2px 2px 0 #49F458, -2px 3px 0 #49F458, -1px -3px 0 #49F458, -1px -2px 0 #49F458, -1px -1px 0 #49F458, -1px 0px 0 #49F458, -1px 1px 0 #49F458, -1px 2px 0 #49F458, -1px 3px 0 #49F458, 0px -3px 0 #49F458, 0px -2px 0 #49F458, 0px -1px 0 #49F458, 0px 0px 0 #49F458, 0px 1px 0 #49F458, 0px 2px 0 #49F458, 0px 3px 0 #49F458, 1px -3px 0 #49F458, 1px -2px 0 #49F458, 1px -1px 0 #49F458, 1px 0px 0 #49F458, 1px 1px 0 #49F458, 1px 2px 0 #49F458, 1px 3px 0 #49F458, 2px -3px 0 #49F458, 2px -2px 0 #49F458, 2px -1px 0 #49F458, 2px 0px 0 #49F458, 2px 1px 0 #49F458, 2px 2px 0 #49F458, 2px 3px 0 #49F458, 3px -3px 0 #49F458, 3px -2px 0 #49F458, 3px -1px 0 #49F458, 3px 0px 0 #49F458, 3px 1px 0 #49F458, 3px 2px 0 #49F458, 3px 3px 0 #49F458
+}
+
+#container .content h4 {
+    position: relative;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #111;
+    background: #fff;
+    font-weight: 300;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+#container .content p {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+#container .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #27166F;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 25px;
+    border-bottom: 4px solid #3f327a
+}

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /errors
+
+Sitemap: https://autokool.info/sitemap.xml
+Host:https://autokool.info
