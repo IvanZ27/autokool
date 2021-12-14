@@ -143,6 +143,76 @@
         <div class="price__btn"><a class="button price__btn-decor" href="./index.html#form" target="_blank"
                 rel="noreferrer noopener" title="Отправить заявку на регистрацию">Желаю учиться</a></div>
     </div>
+
+    <div class="google-map__container">
+        <div class="placeDiv">
+            <div class="mg-location__container">
+
+                <div class="mg-location__left">
+                    <p class="mg-location__company-name">MG Autokool</p>
+                    <p class="mg-location__info">Pirni 5, 10617 Tallinn</p>
+                    <a class="mg-location__view-large" target="_blank"
+                        href="https://www.google.com/maps/place/Autokool+%D0%90%D0%B2%D1%82%D0%BE%D1%88%D0%BA%D0%BE%D0%BB%D0%B0/@59.4274196,24.6999274,17z/data=!3m1!4b1!4m5!3m4!1s0x469294f553636231:0x1218724a52d08a8c!8m2!3d59.4273652!4d24.6998451?hl=en"
+                        id="largerMap">View larger map</a>
+                </div>
+
+                <div class="mg-location__right">
+                    <a class="mg-location__direction-link" target="_blank"
+                        href="https://www.google.com/maps/dir//Autokool+%D0%90%D0%B2%D1%82%D0%BE%D1%88%D0%BA%D0%BE%D0%BB%D0%B0,+Pirni+5,+10617+Tallinn/@59.4273376,24.6984435,17.51z/data=!4m8!4m7!1m0!1m5!1m1!1s0x469294f553636231:0x1218724a52d08a8c!2m2!1d24.6998451!2d59.4273652"
+                        id="direction">
+                        <div class="mg-location__direction-icon"></div>
+                        Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgcyhO4AwXCkaSvDQP1e9HyTLtamddVyM&callback=initMap&libraries=&v=weekly"
+        type="text/javascript"></script>
+
+    <script>
+        if (document.getElementById('map')) {
+
+            var myLatlng = new google.maps.LatLng(59.4274196, 24.6999274);
+
+            var mapOptions = {
+                zoom: 17,
+                mapId: 'f5f5b6760dfefa0',
+                center: myLatlng,
+                scrollwheel: false,
+                query: 'MG Autokool office',
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: "MG Autokool (Pirni 5)",
+                icon: "images/icon-22.png",
+            });
+
+            let info = new google.maps.InfoWindow({
+                content: '<h3>MG Autokool</h3> <br> <a href="https://www.google.com/maps/dir//Autokool+%D0%90%D0%B2%D1%82%D0%BE%D1%88%D0%BA%D0%BE%D0%BB%D0%B0,+Pirni+5,+10617+Tallinn/@59.4273376,24.6984435,17.51z/data=!4m8!4m7!1m0!1m5!1m1!1s0x469294f553636231:0x1218724a52d08a8c!2m2!1d24.6998451!2d59.4273652" target="_blank" style="color:#0645AD; text-decoration: underline;">Pirni 5, 10617 Tallinn</a>',
+            })
+
+            marker.addListener("click", function () {
+                info.open(map, marker);
+            })
+
+            google.map.event.addDomListener(window, 'load', initialize);
+            google.map.event.addDomListener(window, "resize", function () {
+                var center = map.getCenter();
+                google.map.event.trigger(map, "resize");
+                map.setCenter(center);
+            });
+
+        }
+    </script>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner"><a class="logo green-line" href="#start">
