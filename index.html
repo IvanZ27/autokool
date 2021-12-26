@@ -60,9 +60,9 @@
         src="https://www.googletagmanager.com/ns.html?id=GTM-WGH4N2H" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
 <header class="header">
-    <div class="container" id="start">
-        <nav class="header__top">
-            <div class="green-line"><a class="logo" aria-label="Вернуться в начало страницы" href="#start"><svg
+    <div class="navigation" id="navigation">
+        <div class="navbar">
+            <div class="mg-logo green-line"><a class="logo" aria-label="Вернуться в начало страницы" href="#start"><svg
                         id="logo" width="211" height="25" viewBox="0 0 211 25" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -93,13 +93,61 @@
                             stroke="#fff" />
                         <path d="M201.562 20.1875H209.625V24H196.969V1.25H201.562V20.1875z" stroke="#fff" /></svg></a>
             </div>
-            <ul class="lang-menu">
-                <li class="rus-flag"><a aria-label="Вернуться в начало страницы" href="#start"><img
-                            src="./images/flags/ru.png" width="32" height="32" alt="ru" title="Флаг России"></a></li>
-                <li class="est-flag"><a aria-label="Версия страницы на эстонском языке" href="./et/index.html"><img
-                            src="./images/flags/et.png" width="32" height="32" alt="et" title="Флаг Эстонии"></a></li>
+            <nav class="menu__body">
+                <ul class="menu__list_lang-menu">
+                    <li class="menu__list_rus-flag"><a aria-label="Вернуться в начало страницы" href="#start"><img
+                                src="./images/flags/ru.png" width="32" height="32" alt="ru" title="Флаг России"></a>
+                    </li>
+                    <li class="menu__list_est-flag"><a aria-label="Версия страницы на эстонском языке"
+                            href="./et/index.html"><img src="./images/flags/et.png" width="32" height="32" alt="et"
+                                title="Флаг Эстонии"></a>
+                    </li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__link green-line">Главная</a></li>
+                    <li class="has__menu-arrow" id="hasMenuArrow1">
+                        <p class="menu__link green-line" id="menuLink1">Цены</p>
+                        <span class="menu__arrow"></span>
+                        <ul class="menu__sub-list" id="menuSubList1">
+                            <li>
+                                <a href="" class="menu__sub-link green-line">B категория</a>
+                            </li>
+                            <li>
+                                <a href="" class="menu__sub-link green-line">Дополнительные уроки</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu__link green-line">Блог</a></li>
+                    <li class="has__menu-arrow" id="hasMenuArrow2">
+                        <p class="menu__link green-line" id="menuLink2">О нас</p>
+                        <span class="menu__arrow"></span>
+                        <ul class="menu__sub-list" id="menuSubList2">
+                            <li>
+                                <a href="" class="menu__sub-link green-line">О нас</a>
+                            </li>
+                            <li>
+                                <a href="" class="menu__sub-link green-line">Договор об обучении</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="icon-menu">
+                <li class="menu__icon">
+                    <span></span>
+                </li>
+                <li class="rus-flag"><a class="rus-flag-img" aria-label="Вернуться в начало страницы" href="#start"><img
+                            src="./images/flags/ru.png" width="32" height="32" alt="ru" title="Флаг России"></a>
+                </li>
+                <li class="est-flag"><a class="est-flag-img" aria-label="Версия страницы на эстонском языке"
+                        href="./et/index.html"><img src="./images/flags/et.png" width="32" height="32" alt="et"
+                            title="Флаг Эстонии"></a>
+                </li>
             </ul>
-        </nav>
+        </div>
+    </div>
+    <div class="container under-navigation" id="start">
+
         <div class="header__content">
             <h1 class="header__title _anim-items _noanim">Автошкола в таллинне</h1>
             <h2 class="header__subtitle _anim-items _noanim">Без школьного экзамена по вождению</h2>
@@ -108,13 +156,19 @@
                 class="_firstbtn button _anim-items _noanim" href="#form">Стать водителем</a>
             <picture>
                 <source type="image/webp" srcset="images/car.webp">
-                <source type="image/png" srcset="images/car.png"><img class="header__image _anim-items _noanim"
-                    src="images/car.png" alt="Учебный автомобиль"
-                    title="Peugeot 308. Автоматическая коробка передач (АКПП)" width="960" height="433"></picture>
+                <source type="image/png" srcset="images/car.png"><img
+                    class="header__image _with-anim _anim-items _noanim" id="headerImage" src="images/car.png"
+                    alt="Учебный автомобиль" title="Peugeot 308. Автоматическая коробка передач (АКПП)" width="960"
+                    height="433">
+            </picture>
         </div>
     </div>
-</header><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGH4N2H" height="0" width="0"
-        style="display:none;visibility:hidden"></iframe></noscript>
+</header>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGH4N2H" height="0" width="0"
+        style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
 <section class="process">
     <div class="container">
         <h2 class="title">процесс обучения</h2>
@@ -150,27 +204,27 @@
                 </div>
             </div>
             <ol class="process__list">
-                <li class="process__item _anim-items _noanim">
+                <li class="process__item _with-anim _anim-items _noanim">
                     <h4 class="process__item-title">Регистрация на курс</h4>
                     <h5 class="process__item-text">Достаточно позвонить или заполнить форму внизу</h5>
                 </li>
-                <li class="process__item _anim-items _noanim">
+                <li class="process__item _with-anim _anim-items _noanim">
                     <h4 class="process__item-title">Выбор формы обучения</h4>
                     <h5 class="process__item-text">Групповое или электронное обучение</h5>
                 </li>
-                <li class="process__item _anim-items _noanim">
+                <li class="process__item _with-anim _anim-items _noanim">
                     <h4 class="process__item-title">Основной курс обучения вождению</h4>
                     <h5 class="process__item-text">27 уроков теории и 28 уроков вождения</h5>
                 </li>
-                <li class="process__item _anim-items _noanim">
+                <li class="process__item _with-anim _anim-items _noanim">
                     <h4 class="process__item-title">Экзамен по теории и вождению</h4>
                     <h5 class="process__item-text">Сдача экзамена в департаменте транспорта</h5>
                 </li>
-                <li class="process__item _anim-items _noanim">
+                <li class="process__item _with-anim _anim-items _noanim">
                     <h4 class="process__item-title">Зимнее вождение</h4>
                     <h5 class="process__item-text">Заключительный этап обучения для замены прав</h5>
                 </li>
-                <li class="process__item _anim-items _noanim">
+                <li class="process__item _with-anim _anim-items _noanim">
                     <h4 class="process__item-title">Замена первичных прав</h4>
                     <h5 class="process__item-text">Получение водительского удостоверенияе</h5>
                 </li>
@@ -299,28 +353,81 @@
                     <li class="contacts__item">
                         <p class="contacts__item-title">Телефон</p><a class="green-line contacts__link phone"
                             title="Номер телефона автошколы" href="tel:+37256921470">+372 56 92 1470</a>
-                        <div class="social header__social">
+                        <div class="social social__links">
                             <div class="social__imgs soc">
-                                <div class="social__imgs-block"><a class="social__link" title="Отправка e-mail"
-                                        aria-label="Отправка e-mail" href="mailto:ivan@mgautokool.ee" target="_blank"
-                                        rel="noreferrer noopener"><img class="social__img mail"
-                                            src="images/icon/mail.svg" width="21" height="16" alt="email icon"
-                                            title="Ссылка для отправки электронной почты"></a></div>
-                                <div class="social__imgs-block f"><a class="social__link"
+                                <div class="social__imgs-block linked"><a class="social__link"
+                                        aria-label="Ссылка на linkedin"
+                                        href="https://www.linkedin.com/company/mgautokool" target="_blank"
+                                        rel="noreferrer noopener"><img class="social__img"
+                                            src="images/icon/linkedin.svg" width="26" height="16" alt="linkedin icon"
+                                            title="Ссылка на страницу автошколы в Linkedin"></a>
+                                </div>
+                                <div class="social__imgs-block fb"><a class="social__link"
                                         aria-label="Ссылка на Facebook" href="https://www.facebook.com/mgautokool.ee"
-                                        target="_blank" rel="noreferrer noopener"><img class="social__img fb"
+                                        target="_blank" rel="noreferrer noopener"><img class="social__img"
                                             src="images/icon/fb.svg" width="8" height="16" alt="facebook icon"
                                             title="Ссылка на Facebook страницу автошколы"></a></div>
-                                <div class="social__imgs-block"><a class="social__link" aria-label="Ссылка на vkontakte"
-                                        href="https://vk.com/mgautokool" target="_blank" rel="noreferrer noopener"><img
-                                            class="social__img vk" src="images/icon/vk.svg" width="26" height="16"
-                                            alt="vkontakte icon" title="Ссылка на страницу автошколы в VKontakt"></a>
-                                </div>
-                                <div class="social__imgs-block"><a class="social__link"
-                                        aria-label="Ссылка на сайт главной конторы" href="https://mgautokool.ee"
-                                        target="_blank" rel="noreferrer noopener"><img class="social__img link"
-                                            src="images/icon/link.svg" width="16" height="16" alt="link icon"
-                                            title="Ссылка на сайт главного офиса автошколы"></a></div>
+                                <div class="social__imgs-block telega"><a class="social__link"
+                                        aria-label="Написать в Telegram" href="https://telegram.me/ivan_mga"
+                                        target="_blank" rel="noreferrer noopener"><img class="social__img"
+                                            src="images/icon/telegram.svg" width="16" height="16"
+                                            alt="telegram chat icon" title="Ссылка на чат в Telegram"></a></div>
+                                <div class="social__imgs-block mail"><a class="social__link" title="Отправка e-mail"
+                                        aria-label="Отправка e-mail" href="mailto:ivan@mgautokool.ee" target="_blank"
+                                        rel="noreferrer noopener">
+                                        <svg class="social__img" id="svg-envelope-animate" width="25px" height="27px"
+                                            viewBox="0 0 25 27" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <title>Send e-mail</title>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="bottom-envelope">
+                                                    <path class="svg-envolope-color" id="mail-envelope-open-path-copy-2"
+                                                        fill="#8D8D8D"
+                                                        d="M12.5,0 L25,11 L25,25.0059397 C25,26.1054862 24.10296,27 22.9964051,27 L2.00359486,27 C0.88976324,27 0,26.1072288 0,25.0059397 L0,11 L12.5,0 Z">
+                                                    </path>
+                                                    <path id="mail-envelope-open-path" fill="#FFFFFF"
+                                                        d="M12.5,1.30000019 L1.54687503,10.9909992 L1.54687503,22.190589 L23.4415036,22.190589 L23.4415031,10.9909992 L14.4278349,3 L12.5,1.30000019 Z">
+                                                    </path>
+                                                </g>
+                                                <g class="paper" id="paper" transform="translate(3.000000, 3.000000)">
+                                                    <path class="svg-envolope-color" id="mail-envelope-open-path-copy"
+                                                        fill="#8D8D8D"
+                                                        d="M17.0025781,-8.8817842e-16 C18.1090746,-8.8817842e-16 19,0.89525812 19,1.99961498 L19,5.36 L19.0000008,16 L1.0191048e-09,16 L-1.33226763e-15,5.36 L-1.33226763e-15,1.99961498 C-1.33226763e-15,0.88743329 0.89427625,-8.8817842e-16 1.99742191,-8.8817842e-16 L17.0025781,-8.8817842e-16 Z">
+                                                    </path>
+                                                    <path id="mail-envelope-open-path" fill="#FFFFFF"
+                                                        d="M18,2.00862577 C18,1.45157714 17.5452911,1 17.0000398,1 L1.9999602,1 C1.44769743,1 1,1.44373571 1,2.00207596 L1,16.0313873 L18,16.0313873 L18,2.00862577 Z">
+                                                    </path>
+                                                    <path class="svg-envolope-color" id="mail-envelope-open-path"
+                                                        fill="#8D8D8D" d="M3,4 L3,5 L16,5 L16,4 L3,4 L3,4 L3,4 Z">
+                                                    </path>
+                                                    <path class="svg-envolope-color" id="mail-envelope-open-path"
+                                                        fill="#8D8D8D" d="M3,7 L3,8 L16,8 L16,7 L3,7 L3,7 L3,7 Z">
+                                                    </path>
+                                                    <path class="svg-envolope-color" id="mail-envelope-open-path"
+                                                        fill="#8D8D8D"
+                                                        d="M3,13 L3,14 L16,14 L16,13 L3,13 L3,13 L3,13 Z"></path>
+                                                    <path class="svg-envolope-color" id="mail-envelope-open-path"
+                                                        fill="#8D8D8D"
+                                                        d="M3,10 L3,11 L16,11 L16,10 L3,10 L3,10 L3,10 Z"></path>
+                                                </g>
+                                                <g id="upper-envelope" transform="translate(0.000000, 11.000000)">
+                                                    <path class="svg-envolope-color" id="TOP" fill="#8D8D8D"
+                                                        d="M1.484375,8.8817842e-16 L10.5625,8 L14.4375,8 L22.7146597,0.604003909 C22.7146597,0.604003909 23.390625,0 23.390625,0 L25,8.8817842e-16 L25,14.0059397 C25,15.1054862 24.10296,16 22.9964051,16 L2.00359486,16 C0.88976324,16 0,15.1072288 0,14.0059397 L0,8.8817842e-16 L1.484375,8.8817842e-16 Z">
+                                                    </path>
+                                                    <path id="mail-envelope-open-path" fill="#FFFFFF"
+                                                        d="M9.5,9 L2.5,15 L22.5,15 L15.5,9 L9.5,9 L9.5,9 L9.5,9 Z">
+                                                    </path>
+                                                    <path id="mail-envelope-open-path" fill="#FFFFFF"
+                                                        d="M23.68514,14.7251701 L16,8.0170898 L24,1 L24,7.5000199 L24,14.0000398 C24,14.2831537 23.8789949,14.5418569 23.68514,14.7251701 L23.68514,14.7251701 L23.68514,14.7251701 L23.68514,14.7251701 Z">
+                                                    </path>
+                                                    <path id="mail-envelope-open-path" fill="#FFFFFF"
+                                                        d="M9,8.0170898 L1,1 L1,7.5000199 L1,14.0000398 C1,14.2831537 1.12100514,14.5418569 1.31486,14.7251701 L9,8.0170898 Z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a></div>
                             </div>
                         </div>
                     </li>

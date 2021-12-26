@@ -1,4 +1,5 @@
 'use strict';
+
 const mySwiper = new Swiper('.slider__container', {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -55,6 +56,7 @@ const mySwiper = new Swiper('.slider__container', {
         itemRoleDescriptionMessage: '',
     },
 });
+
 let slides = document.querySelectorAll('.swiper-wrapper .swiper-slide');
 let sliderPrev = document.querySelector('.swiper__prev');
 let sliderNext = document.querySelector('.swiper__next');
@@ -93,6 +95,7 @@ swipeOffPrev.addEventListener('click', function () {
         swipeOffPrev.classList.remove('onclick');
     }, 500);
 });
+
 $(document).ready(function () {
     $('a').on('click', function (event) {
         if (this.hash !== '') {
