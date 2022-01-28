@@ -25,41 +25,37 @@ const isMobile = {
     }
 };
 
-let menuList1 = document.getElementById('menuLink1');
+// let menuList1 = document.getElementById('menuLink1');  //if many menus
 let menuList2 = document.getElementById('menuLink2');
 
 
 if (isMobile.any()) {
     document.body.classList.add('_touch');
 
-    menuList1.classList.remove('green-line');
+    // menuList1.classList.remove('green-line'); //if many menus
     menuList2.classList.remove('green-line');
 
     let hasmMenuArrows = document.querySelectorAll('.has__menu-arrow');
     if (hasmMenuArrows.length > 0) {
-        // for (let index = 0; index < hasmMenuArrows.length; index++) {
-        //     const hasmMenuArrow = hasmMenuArrows[index];
-        //     hasmMenuArrow.addEventListener('click', function (e) {
-        //         hasmMenuArrow.classList.toggle('_active-menu');
-        //     });
-        // }
         for (let index = 0; index < hasmMenuArrows.length; index++) {
             const hasmMenuArrow = hasmMenuArrows[index];
             hasmMenuArrow.addEventListener('click', function (e) {
-
-                if (index === 0) {
-                    hasmMenuArrows[1].classList.remove('_active-menu');
-                    hasmMenuArrows[0].classList.toggle('_active-menu');
-                } else if (index === 1) {
-                    hasmMenuArrows[0].classList.remove('_active-menu');
-                    hasmMenuArrows[1].classList.toggle('_active-menu');
-                }
+                hasmMenuArrows[index].classList.toggle('_active-menu');
+//if many menus
+                // if (index === 0) {
+                //     hasmMenuArrows[1].classList.remove('_active-menu');
+                //     hasmMenuArrows[0].classList.toggle('_active-menu');
+                // } else if (index === 1) {
+                //     hasmMenuArrows[0].classList.remove('_active-menu');
+                //     hasmMenuArrows[1].classList.toggle('_active-menu');
+                // }
             });
         }
     }
 } else {
     document.body.classList.add('_pc');
 }
+
 
 // Menu burger
 const iconMenu = document.querySelector('.menu__icon');
@@ -72,13 +68,51 @@ if (iconMenu) {
     });
 }
 
+// if (iconMenu.classList.contains('_active-menu')){
+//     console.log("juhuu");
+//     console.log(window.pageYOffset);
+
+// }
+
+
+
+
+const closeMenuBody = document.getElementById('closeMenuBody');
+closeMenuBody.addEventListener("click", onMenuLinkClick);
+
+
+function onMenuLinkClick(e) {
+    // const menuLink = e.target;
+    // if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+    // 	const gotoBlock = document.querySelector(menuLink.dataset.goto);
+    // 	const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+    if (iconMenu.classList.contains('_active-menu')) {
+        document.body.classList.remove('_lock');
+        iconMenu.classList.remove('_active-menu');
+        menuBody.classList.remove('_active-menu');
+    }
+
+    // window.scrollTo({
+    // 	top: gotoBlockValue,
+    // 	behavior: "smooth"
+    // });
+    // e.preventDefault();
+
+    // }
+}
+
+
+
+
+
 // black nav panel on scroll
 window.onscroll = () => {
-    const nav = document.querySelector('#navigation');
+    const navBar = document.querySelector('#navigation');
     if (this.scrollY <= 22) {
-        nav.className = 'navigation';
+        navBar.classList.remove('nav__scroll');
     } else if (document.body.scrollTop === 0) {
-        nav.className = 'navigation nav__scroll';
+        navBar.classList.add('nav__scroll');
     }
 };
 
@@ -109,6 +143,7 @@ const processListItems = document.querySelectorAll('.process__list > li');
 
 if (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll);
+
     function animOnScroll() {
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
@@ -120,7 +155,6 @@ if (animItems.length > 0) {
                     processListItems[i].classList.add('_without-anim');
                 }
                 nav.classList.add('nav__scroll');
-                console.log(window.pageYOffset);
             }
 
             const animItemHeight = animItem.offsetHeight;

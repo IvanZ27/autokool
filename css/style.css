@@ -52,6 +52,10 @@ a {
     transition: all .4s ease-in-out;
 }
 
+.not__main-nav {
+    background-color: #000;
+}
+
 .navigation.nav__scroll {
     background-color: black;
     padding: 0;
@@ -76,10 +80,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding: 0 10px;
-}
-
-.under-navigation {
-    padding-top: 85px;
 }
 
 .webp .header {
@@ -110,7 +110,7 @@ a {
     max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
-    padding: 13px 10px 70px;
+    padding: 13px 25px 70px;
     font-size: 1rem
 }
 
@@ -262,6 +262,7 @@ body._pc .menu__list>li:hover .menu__sub-list {
     -ms-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
     pointer-events: all;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
 }
 
 body._touch .menu__list>li {
@@ -325,6 +326,7 @@ body._touch .menu__list>li._active-menu .menu__sub-list {
     -ms-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
     pointer-events: all;
+    box-shadow: 0 8px 15px rgb(0 0 0 / 10%);
 }
 
 body._touch .menu__list>li._active-menu .menu__arrow {
@@ -1268,7 +1270,7 @@ button {
 }
 
 .linkedin:hover,
-.facebook:hover,
+.f:hover .facebook,
 .telegram:hover,
 .twitter:hover {
     -webkit-transition: all .2s ease-in-out;
@@ -1279,6 +1281,10 @@ button {
     -moz-transform: scale(1.5);
     transition: all .2s ease-in-out;
     transform: scale(1.5);
+}
+
+.f:hover {
+    cursor: pointer;
 }
 
 .ya-share2__container_size_m .ya-share2__badge .ya-share2__icon:hover {
@@ -1468,6 +1474,10 @@ button {
 
 .mg-location__view-large:hover {
     text-decoration: underline;
+}
+
+.under-navigation {
+    padding-top: 85px;
 }
 
 @media (min-width:921px) {
