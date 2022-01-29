@@ -44,7 +44,7 @@ a {
     top: 0;
     left: 0;
     z-index: 10;
-    padding: 15px 0;
+    padding: 10px 0;
     background-color: transparent;
     -webkit-transition: all .4s ease-in-out;
     -moz-transition: all .4s ease-in-out;
@@ -65,7 +65,7 @@ a {
     max-width: 1220px;
     margin: 0 auto;
     display: flex;
-    padding: 10px 10px;
+    padding: 0 10px;
     align-items: center;
     justify-content: space-between;
     min-height: 60px;
@@ -210,13 +210,13 @@ a {
 
 .menu__list>li {
     position: relative;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 35px;
 }
 
 .menu__link {
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .menu__sub-link {
@@ -674,7 +674,7 @@ button {
 
 .process__inner {
     display: flex;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     justify-content: space-between
 }
 
@@ -827,7 +827,8 @@ button {
 }
 
 .whywe {
-    margin-bottom: 100px
+    /* margin-bottom: 100px */
+    margin-top: 100px;
 }
 
 .whywe__inner {
@@ -918,6 +919,10 @@ button {
     border: 1px solid #27166F
 }
 
+.contacts {
+    margin-top: 100px;
+}
+
 .contacts__inner {
     display: flex;
     justify-content: space-between
@@ -1000,6 +1005,16 @@ button {
 
 .contacts__title::after {
     background-color: #fff
+}
+
+.contact__anchor {
+    padding-top: 110px;
+    margin-top: -110px;
+}
+
+.form__anchor {
+    padding-top: 110px;
+    margin-top: -110px;
 }
 
 .form__input {
@@ -1390,6 +1405,7 @@ button {
 
 .google-map__container {
     position: relative;
+    z-index: 1;
 }
 
 .mg-location__container {
