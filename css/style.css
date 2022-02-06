@@ -105,7 +105,8 @@ a {
 }
 
 .contract,
-.pricelist {
+.pricelist,
+.about__article {
     font-family: 'Montserrat';
     max-width: 1220px;
     margin-left: auto;
@@ -425,6 +426,10 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     line-height: 1.6rem;
     font-weight: 400;
     margin: 35px 0 12px 0
+}
+
+.about__article-title {
+    margin-top: 35px;
 }
 
 .privacy__text,
@@ -1312,7 +1317,8 @@ button {
     display: flex
 }
 
-.priceh1 {
+.priceh1,
+.abouth1 {
     margin-top: 35px;
     margin-bottom: 10px
 }
@@ -1377,17 +1383,20 @@ button {
     padding-left: 20px
 }
 
-.price__btn {
+.price__btn,
+.about__btn {
     margin: auto;
     text-align: center;
     padding-top: 35px
 }
 
-.price__btn-decor {
+.price__btn-decor,
+.about__btn-decor {
     border: 1px solid transparent
 }
 
-.price__btn-decor:hover {
+.price__btn-decor:hover,
+.about__btn-decor:hover {
     border: 1px solid #27166F
 }
 
