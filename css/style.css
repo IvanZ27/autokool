@@ -1348,18 +1348,22 @@ button {
     margin: 35px 0 12px 5px
 }
 
-.pricelist__link {
+.pricelist__link,
+.lkliit__link {
     display: inline;
     color: #27166F;
-    background-image: linear-gradient(to left, #27166F 33%, rgba(255, 255, 255, 0) 0%);
-    background-position: bottom;
-    background-size: 6px 1px;
-    background-repeat: repeat-x;
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.6rem;
     font-weight: 300;
     margin-bottom: 12px
+}
+
+.dotted-underline {
+    background-image: linear-gradient(to left, #27166F 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
 }
 
 .pricelist__number-ol {
