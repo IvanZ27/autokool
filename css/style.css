@@ -82,7 +82,7 @@ a {
     padding: 0 10px;
 }
 
-.webp .header {
+.webp .mainheader {
     background: url(../images/header-bg.webp) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -90,7 +90,7 @@ a {
     color: #fff;
 }
 
-.no-webp .header {
+.no-webp .mainheader {
     background: url(../images/header-bg.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
@@ -107,7 +107,8 @@ a {
 .contract,
 .pricelist,
 .about__article,
-.blog__article {
+.blog__article,
+.blog__page {
     font-family: 'Montserrat';
     max-width: 1220px;
     margin-left: auto;
@@ -1565,6 +1566,22 @@ button {
     transition: transform .5s;
 }
 
+.webp .fivemyths {
+    background-image: url(../images/fivemyths.webp);
+}
+
+.no-webp .fivemyths {
+    background-image: url(../images/fivemyths.jpg);
+}
+
+.webp .valiautokool {
+    background-image: url(../images/valiautokool.webp);
+}
+
+.no-webp .valiautokool {
+    background-image: url(../images/valiautokool.jpg);
+}
+
 .user img {
     width: 50px;
     height: 50px;
@@ -1690,6 +1707,172 @@ button {
     left: 0%;
 }
 
+.blog__article-title {
+    font-family: 'Roboto Condensed';
+    color: #27166F;
+    font-size: 27px;
+    line-height: 1.6rem;
+    font-weight: 300;
+    margin: 22px 0;
+}
+
+.article__content {
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* START Blog Valiautokool blockquote */
+
+.valiautokool-blockquote {
+    font-size: 18px;
+    width: 60%;
+    margin: 50px auto 50px 0;
+    font-style: italic;
+    color: #555555;
+    padding: 22px;
+    border-left: 8px solid #49F458;
+    line-height: 28px;
+    position: relative;
+}
+
+.valiautokool-blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #49F458;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.valiautokool-blockquote::after {
+    content: '';
+}
+
+.valiautokool-blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+/* END Blog Valiautokool blockquote */
+
+
+/* START blog top picture */
+
+@keyframes imageAppears {
+    0% {
+        opacity: 0;
+        clip-path: polygon(60% 0, 65% 0, 35% 100%, 30% 100%);
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    70% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, -20% 100%);
+    }
+}
+
+@keyframes contentAppears {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientAppears {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blog__top {
+    width: 100%;
+    background: white;
+    position: relative;
+    animation: imageAppears 0.85s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    top: 80px;
+    margin-bottom: 45px;
+}
+
+.blog__top-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.blog__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog__content::before {
+    content: "";
+    animation: gradientAppears 0.45s linear 0.85s forwards;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, -20% 100%);
+}
+
+.blog__content-title {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    margin-top: 0;
+    font-size: calc(20px + 2vw);
+    line-height: 1;
+    margin-bottom: 0.2em;
+    opacity: 0;
+    animation: contentAppears 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s forwards;
+}
+
+.blog__content-title--secondary {
+    margin-bottom: 0;
+    font-size: calc(10px + 1vw);
+    animation-delay: 1.25s;
+}
+
+/* END blog top picture */
+
+
+
+
 @media (min-width: 640px) {
     .blog__card {
         flex-direction: row;
@@ -1783,11 +1966,11 @@ button {
 }
 
 @media (max-width:1160px) {
-    .webp .header {
+    .webp .mainheader {
         background-attachment: unset
     }
 
-    .no-webp .header {
+    .no-webp .mainheader {
         background-attachment: unset
     }
 
@@ -2229,6 +2412,22 @@ button {
             font-size: 2rem;
             margin-bottom: 30px;
             text-align: center
+        }
+
+        .blog__top {
+            margin-bottom: 30px;
+        }
+
+        .blog__content-title {
+            font-size: calc(19px + 1.5vw);
+        }
+
+        .blog__content-title--secondary {
+            font-size: calc(10px + 1vw);
+        }
+
+        .valiautokool-blockquote {
+            width: 100%;
         }
 
         .title::after {
