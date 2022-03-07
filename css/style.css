@@ -2,7 +2,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
-    -webkit-appearance: none
+    -webkit-appearance: none;
 }
 
 html {
@@ -24,14 +24,14 @@ body._lock {
 
 header {
     font-family: 'Roboto Condensed';
-    font-weight: 400
+    font-weight: 400;
 }
 
 a {
     text-decoration: none;
     color: inherit;
     display: inline-block;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
 
 ._displayNone {
@@ -357,7 +357,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
 .menu__list_lang-menu {
@@ -365,7 +365,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
 }
 
 .est-flag {
-    padding-left: 25px
+    padding-left: 25px;
 }
 
 .est-flag img:hover,
@@ -377,12 +377,12 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     -ms-transition: all .2s;
-    transition: all .2s
+    transition: all .2s;
 }
 
 .green-line {
     display: inline-block;
-    position: relative
+    position: relative;
 }
 
 .green-line::after {
@@ -401,7 +401,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     -webkit-transition: transform 0.3s ease-out;
     -moz-transition: transform 0.3s ease-out;
     -ms-transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out
+    transition: transform 0.3s ease-out;
 }
 
 .green-line:hover::after {
@@ -409,7 +409,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);
     transform: scaleX(1);
-    transform-origin: bottom left
+    transform-origin: bottom left;
 }
 
 .privacy {
@@ -418,7 +418,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     margin-left: auto;
     margin-right: auto;
     padding: 13px 15px 70px;
-    font-size: 100%
+    font-size: 100%;
 }
 
 .privacy__title,
@@ -427,7 +427,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     font-size: 1.5rem;
     line-height: 1.6rem;
     font-weight: 400;
-    margin: 35px 0 12px 0
+    margin: 35px 0 12px 0;
 }
 
 .about__article-title {
@@ -439,12 +439,12 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     font-family: 'Montserrat';
     font-weight: 300;
     line-height: 1.6rem;
-    font-size: 1rem
+    font-size: 1rem;
 }
 
 .header__content {
     padding-top: 0;
-    position: relative
+    position: relative;
 }
 
 .header__title {
@@ -461,7 +461,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -ms-transition: all 1s ease 0s;
-    transition: all 1s ease 0s
+    transition: all 1s ease 0s;
 }
 
 .header__title._active {
@@ -469,7 +469,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
-    opacity: 1
+    opacity: 1;
 }
 
 .header__subtitle {
@@ -486,7 +486,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     -webkit-transition: all 1s ease .5;
     -moz-transition: all 1s ease .5;
     -ms-transition: all 1s ease .5;
-    transition: all 1s ease .5s
+    transition: all 1s ease .5s;
 }
 
 .header__subtitle._active {
@@ -494,7 +494,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
-    opacity: 1
+    opacity: 1;
 }
 
 .header__text {
@@ -512,7 +512,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     -webkit-transition: all 1s ease .5s;
     -moz-transition: all 1s ease .5s;
     -ms-transition: all 1s ease .5s;
-    transition: all 1s ease .5s
+    transition: all 1s ease .5s;
 }
 
 .header__text._active {
@@ -520,11 +520,11 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
     -moz-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
-    opacity: 1
+    opacity: 1;
 }
 
 button {
-    border-width: 0
+    border-width: 0;
 }
 
 .button {
@@ -545,7 +545,7 @@ button {
     -moz-transition: .5s;
     -ms-transition: .5s;
     transition: .5s;
-    overflow: hidden
+    overflow: hidden;
 }
 
 ._firstbtn {
@@ -557,7 +557,7 @@ button {
     -webkit-transition: all 1s ease 1.1s;
     -moz-transition: all 1s ease 1.1s;
     -ms-transition: all 1s ease 1.1s;
-    transition: all 1s ease 1.1s
+    transition: all 1s ease 1.1s;
 }
 
 ._firstbtn._active {
@@ -565,14 +565,14 @@ button {
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    opacity: 1
+    opacity: 1;
 }
 
 ._firstbtn._stdeffects {
     -webkit-transition: .5s;
     -moz-transition: .5s;
     -ms-transition: .5s;
-    transition: .5s
+    transition: .5s;
 }
 
 .button:hover {
