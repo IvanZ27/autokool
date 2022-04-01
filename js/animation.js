@@ -41,7 +41,7 @@ if (isMobile.any()) {
             const hasmMenuArrow = hasmMenuArrows[index];
             hasmMenuArrow.addEventListener('click', function (e) {
                 hasmMenuArrows[index].classList.toggle('_active-menu');
-//if many menus
+                //if many menus
                 // if (index === 0) {
                 //     hasmMenuArrows[1].classList.remove('_active-menu');
                 //     hasmMenuArrows[0].classList.toggle('_active-menu');
@@ -149,7 +149,7 @@ if (animItems.length > 0) {
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
 
-            if (window.pageYOffset !== 0 && performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+            if (window.pageYOffset !== 0 && performance.navigation.type == performance.navigation.TYPE_RELOAD || location.href.indexOf("#contacts") != -1 || location.href.indexOf("#form__anchor") != -1) {
                 headerImage.classList.remove('_with-anim');
                 for (var i = 0; i < processListItems.length; i++) {
                     processListItems[i].classList.remove('_with-anim');

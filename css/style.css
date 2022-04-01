@@ -774,8 +774,6 @@ button {
     transition: all .8s ease 0s
 }
 
-
-
 .process__item::before {
     content: '0'counter(mg-counter);
     position: absolute;
@@ -2004,7 +2002,7 @@ button {
         padding-top: 0
     }
 
-    .process__item {
+    .process__item._with-anim {
         -webkit-transform: translate(0, 120%);
         -moz-transform: translate(0, 120%);
         -ms-transform: translate(0, 120%);
