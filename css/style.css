@@ -430,7 +430,7 @@ body._touch .menu__list>li._active-menu .menu__arrow::after {
 
 .privacy__title,
 .pricelist__title {
-    color: #27166F;
+    color: #003087;
     font-size: 1.5rem;
     line-height: 1.6rem;
     font-weight: 400;
@@ -544,7 +544,7 @@ button {
     background-color: #49F458;
     background-position: center;
     border-radius: 4px;
-    color: #27166F;
+    color: #003087;
     text-decoration: none;
     text-align: center;
     position: relative;
@@ -583,7 +583,7 @@ button {
 }
 
 .button:hover {
-    color: #27166F;
+    color: #003087;
     cursor: pointer;
     background: #fff radial-gradient(circle, transparent 1%, #fff 1%) center/15000%;
     -webkit-transition: .5s;
@@ -666,7 +666,7 @@ button {
 }
 
 .title {
-    color: #27166F;
+    color: #003087;
     font-size: 2rem;
     line-height: 3rem;
     font-weight: 400;
@@ -679,7 +679,7 @@ button {
     content: '';
     width: 80px;
     height: 3px;
-    background-color: #27166F;
+    background-color: #003087;
     position: absolute;
     top: 22px;
     margin-left: 20px;
@@ -699,7 +699,7 @@ button {
 }
 
 .process__content-title {
-    color: #27166F;
+    color: #003087;
     font-size: 1.5rem;
     line-height: 1.6rem;
     font-weight: 300;
@@ -725,7 +725,7 @@ button {
 }
 
 .button--decor:hover {
-    border: 1px solid #27166F
+    border: 1px solid #003087
 }
 
 .process__list {
@@ -802,7 +802,7 @@ button {
 
 .process__item:hover {
     box-shadow: none;
-    border: 3px solid #27166F;
+    border: 3px solid #003087;
     width: 580px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -813,11 +813,11 @@ button {
 }
 
 .process__item:hover .process__item-title {
-    color: #27166F
+    color: #003087
 }
 
 .process__item:hover::before {
-    color: #27166F
+    color: #003087
 }
 
 .process__item-title {
@@ -867,7 +867,7 @@ button {
 
 .whywe__list {
     list-style: none;
-    background-color: #27166F;
+    background-color: #003087;
     padding: 20px 50px 20px 77px;
     border-radius: 7px;
     min-height: 640px;
@@ -928,7 +928,7 @@ button {
 }
 
 .whywe__item-button:hover {
-    border: 1px solid #27166F
+    border: 1px solid #003087
 }
 
 .contacts {
@@ -950,7 +950,7 @@ button {
 }
 
 .contacts__item-title {
-    color: #27166F;
+    color: #003087;
     font-size: 1.5rem
 }
 
@@ -972,7 +972,7 @@ button {
 }
 
 .contacts__form {
-    background-color: #27166F;
+    background-color: #003087;
     padding: 50px 75px 57px;
     text-align: center;
     position: relative;
@@ -1036,7 +1036,7 @@ button {
     font-weight: 300;
     width: 450px;
     height: 75px;
-    color: #27166F;
+    color: #003087;
     border-radius: 4px;
     margin-bottom: 20px;
     display: block;
@@ -1059,7 +1059,7 @@ button {
     font-family: 'Roboto Condensed';
     font-size: 1.2rem;
     font-weight: 300;
-    color: #27166F
+    color: #003087
 }
 
 .form__input::-moz-placeholder {
@@ -1067,7 +1067,7 @@ button {
     font-family: 'Roboto Condensed';
     font-size: 1.2rem;
     font-weight: 300;
-    color: #27166F
+    color: #003087
 }
 
 .form__input:-ms-input-placeholder {
@@ -1075,7 +1075,7 @@ button {
     font-family: 'Roboto Condensed';
     font-size: 1.2rem;
     font-weight: 300;
-    color: #27166F
+    color: #003087
 }
 
 .form__input:-moz-placeholder {
@@ -1083,18 +1083,18 @@ button {
     font-family: 'Roboto Condensed';
     font-size: 1.2rem;
     font-weight: 300;
-    color: #27166F
+    color: #003087
 }
 
 .form__input:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    color: #27166F;
+    color: #003087;
     background-color: #fff;
     border-color: #ab91ff;
     outline: 0;
-    box-shadow: inset 0 0 10px #27166F;
+    box-shadow: inset 0 0 10px #003087;
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     -ms-transition: all 0.5s ease 0s;
@@ -1188,7 +1188,7 @@ button {
 
 .form__btn {
     border: none;
-    color: #27166F;
+    color: #003087;
     margin-top: 30px;
     cursor: pointer
 }
@@ -1352,7 +1352,7 @@ button {
 }
 
 .pricelist__bold {
-    color: #27166F;
+    color: #003087;
     font-size: 1.5rem;
     line-height: 1.6rem;
     font-weight: bold;
@@ -1362,7 +1362,7 @@ button {
 .pricelist__link,
 .lkliit__link {
     display: inline;
-    color: #27166F;
+    color: #003087;
     text-decoration: none;
     font-size: 1rem;
     line-height: 1.6rem;
@@ -1371,7 +1371,7 @@ button {
 }
 
 .dotted-underline {
-    background-image: linear-gradient(to left, #27166F 33%, rgba(255, 255, 255, 0) 0%);
+    background-image: linear-gradient(to left, #003087 33%, rgba(255, 255, 255, 0) 0%);
     background-position: bottom;
     background-size: 6px 1px;
     background-repeat: repeat-x;
@@ -1413,7 +1413,7 @@ button {
 
 .price__btn-decor:hover,
 .about__btn-decor:hover {
-    border: 1px solid #27166F
+    border: 1px solid #003087
 }
 
 #map {
@@ -1575,12 +1575,12 @@ button {
     transition: transform .5s;
 }
 
-.webp .fivemyths {
-    background-image: url(../images/fivemyths.webp);
+.webp .autvsman {
+    background-image: url(../images/automatic-vs-manual-gears.webp);
 }
 
-.no-webp .fivemyths {
-    background-image: url(../images/fivemyths.jpg);
+.no-webp .autvsman {
+    background-image: url(../images/automatic-vs-manual-gears.jpg);
 }
 
 .webp .valiautokool {
@@ -1672,7 +1672,7 @@ button {
 }
 
 .blog__card .description .read-more a {
-    color: #27166F;
+    color: #003087;
     display: inline-block;
     position: relative;
 }
@@ -1718,7 +1718,7 @@ button {
 
 .blog__article-title {
     font-family: 'Roboto Condensed';
-    color: #27166F;
+    color: #003087;
     font-size: 27px;
     line-height: 1.6rem;
     font-weight: 300;
@@ -1879,8 +1879,14 @@ button {
 
 /* END blog top picture */
 
+.automatBenefits li {
+    margin: 10px 35px;
+}
 
-
+.automatBenefits li span {
+    position: relative;
+    left: 15px;
+  }
 
 @media (min-width: 640px) {
     .blog__card {
