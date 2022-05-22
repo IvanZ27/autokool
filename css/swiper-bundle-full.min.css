@@ -633,8 +633,8 @@ button.swiper-pagination-bullet {
 
 .slider__item:hover {
     color: #fff;
-    background-color: #27166F;
-    border-color: #27166F
+    background-color: #003087;
+    border-color: #003087
 }
 
 .slider__item-img {
@@ -669,14 +669,14 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #27166F;
+    background-color: #003087;
     height: 12px;
     border-radius: 3px
 }
 
 .swiper__prev,
 .swiper__next {
-    fill: #27166F
+    fill: #003087
 }
 
 .swiper-navigation {
@@ -686,7 +686,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-    background: #27166F
+    background: #003087
 }
 
 #arrow__wrapper {
